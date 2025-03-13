@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="/" class="header-logo">
+          <img src="./images/logo.png" alt="">
+        </a>
+        <nav class="header-nav">
+          <span class="icon-menu">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <ul class="header-menu">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Blindbox trúng thưởng</a></li>
+            <li><a href="#">Thông tin chương trình</a></li>
+            <li><a href="#">Kết quả trúng thưởng</a></li>
+          </ul>
+          <button class="btn-primary header-btn">
+            Đăng ký
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="banner">
+      <div>
+        <img src="./images/banner.jpg" class="banner-bg md" alt="">
+        <img src="./images/banner_sm.jpg" class="banner-bg sm" alt="">
+      </div>
+      <img src="./images/img-banner.svg" class="banner-decor md" alt="">
+    </div>
+    <section class="gift">
+      <div class="container">
+        <div class="gift-wrapper">
+          <img src="./images/gift-bg.png" class="gift-bg" alt="">
+          <div class="swiper mySwiper gift-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/gift1.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift2.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift3.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift4.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift5.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift6.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift7.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift8.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift9.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift10.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift11.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift12.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift13.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift14.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift15.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift16.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift17.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift18.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift19.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift20.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift21.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift22.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift23.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gift24.png" />
+              </div>
+              
+            </div>
+            <div class="btn-swiper swiper-button-next">
+              <img src="./images/arrow-right.svg" alt="">
+            </div>
+            <div class="btn-swiper swiper-button-prev">
+              <img src="./images/arrow-left.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="spin">
+      <div class="container">
+        <h2>
+          <img src="./images/spin-title.png" alt="">
+        </h2>
+        <div>
+           
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".gift-slider", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script src="./index.js"></script>
+</body>
+</html>
