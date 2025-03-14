@@ -12,7 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const btnSpin = document.querySelector(".spin-main-btn");
   const spinImg = document.querySelector('.spin-main-img');
-  btnSpin.addEventListener('click', function() {
-    spinImg.classList.add('active')
+  if(btnSpin) {
+    btnSpin.addEventListener('click', function() {
+      spinImg.classList.add('active')
+    });
+  }
+
+  const btnClosePopup = Array.from(document.querySelectorAll('.popup .btn-close-popup'));
+  btnClosePopup.map(item => {
+    item.addEventListener('click', function() {
+      item.parentNode.parentNode.classList.add('hidden')
+    })
   })
 })
