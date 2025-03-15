@@ -38,9 +38,26 @@
   </header>
   <main>
     <div class="banner">
-      <div>
-        <img src="./images/banner.jpg" class="banner-bg md" alt="">
-        <img src="./images/banner_sm.jpg" class="banner-bg sm" alt="">
+      <div class="banner-bg">
+        <img src="./images/banner.jpg" class="md" alt="">
+        <img src="./images/banner_sm.jpg" class="sm" alt="">
+      </div>
+      <div class="banner-wrapper">
+        <div class="banner-left md">
+          <img src="./images/banner-left.png" alt="">
+        </div>
+        <div class="banner-right">
+          <div class="banner-right-top">
+            <img src="./images/banner-right-top.png" alt="">
+          </div>
+          <a href="#"><button class="btn-primary">Đăng ký ngay!</button></a>
+          <div class="banner-right-middle sm">
+            <img src="./images/banner-left.png" alt="">
+          </div>
+          <div class="banner-right-bottom">
+            <img src="./images/banner-right-bottom.png" alt="">
+          </div>
+        </div>
       </div>
       <img src="./images/img-banner.svg" class="banner-decor md" alt="">
     </div>
@@ -453,6 +470,9 @@
     });
     var swiper = new Swiper(".feedback-slider", {
       loop: true,
+      autoplay: {
+      delay: 3000, 
+    },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
