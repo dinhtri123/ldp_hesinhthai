@@ -29,7 +29,7 @@
             <li><a href="#">Thông tin chương trình</a></li>
             <li><a href="#">Kết quả trúng thưởng</a></li>
           </ul>
-          <button class="btn-primary header-btn">
+          <button class="btn-primary header-btn show-popup">
             Đăng ký
           </button>
         </nav>
@@ -150,7 +150,7 @@
           <img src="./images/spin-btn.png" class="spin-main-btn" alt="">
           <img src="./images/spin-vongquay-bg.png" class="spin-main-bg md" alt="">
         </div>
-        <button class="btn-primary">Đăng ký tham gia ngay</button>
+        <button class="btn-primary show-popup">Đăng ký tham gia ngay</button>
       </div>
     </section>
     <section class="join">
@@ -391,6 +391,56 @@
       </div>
     </div>
   </footer>
+  <div class="popup popup-action popup-action-register hidden">
+    <div class="popup-action-inner">
+        <span class="popup-btn-close btn-close-popup">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+        <div class="popup-action-wrapper">
+            <div class="popup-action-title">
+                <h3>CHÀO MỪNG BẠN ĐẾN VỚI HỆ SINH THÁI CỦA FPT POLYTECHNIC</h3>
+                <p>Vui lòng nhập thông tin chính xác để có OTP và nhận quà</p>
+            </div>
+            <form action="">
+                <input type="text" name="name" id="name" placeholder="Họ và tên">
+                <input type="tel" id="phone" name="phone" placeholder="Số điện thoại">
+                <input type="text" name="school" id="school" placeholder="Trường THPT">
+                <select name="city" id="city">
+                    <option value="tp" selected>TỈnh/Thành Phố</option>
+                    <option value="dn">Đà Nẵng</option>
+                    <option value="hcm">Hồ Chí Minh</option>
+                    <option value="hn">Hà Nội</option>
+                </select>
+                <input type="text" name="address" id="address" placeholder="Địa chỉ chi tiết">
+            </form>
+            <p>Ghi chú: Quà tặng trong hệ sinh thái của FPT Polytechnic là không giới hạn và vô cùng hấp dẫn. Bạn
+                đừng bỏ lỡ!</p>
+            <button type="submit">ĐĂNG KÝ TÀI KHOẢN</button>
+            <p class="btn-login popup-action-redirect">Bạn đã có tài khoản? <b>Đăng nhập ngay</b></p>
+        </div>
+    </div>
+</div>
+<div class="popup popup-action popup-action-login hidden">
+    <div class="popup-action-inner">
+        <span class="popup-btn-close btn-close-popup">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+        <img src="./images/img-login.png" class="popup-action-login-img" alt="">
+        <div class="popup-action-wrapper">
+            <div class="popup-action-title">
+                <h3>CHÀO MỪNG BẠN ĐẾN VỚI HỆ SINH THÁI CỦA FPT POLYTECHNIC</h3>
+                <p>Bạn sẽ có cơ hội dành nhiều phần quà hấp dẫn và vô số thông tin hữu ích khi trải nghiệm tại đây
+                </p>
+            </div>
+            <form action="">
+                <input type="tel" name="phone" id="phone" placeholder="Số điện thoại">
+                <input type="password" id="password" name="password" placeholder="Mật khẩu">
+            </form>
+            <button type="submit">ĐĂNG NHẬP TÀI KHOẢN</button>
+            <p class="btn-register popup-action-redirect">Bạn chưa có tài khoản? <b>Đăng ký ngay</b></p>
+        </div>
+    </div>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script>

@@ -24,4 +24,25 @@ document.addEventListener('DOMContentLoaded', function() {
       item.parentNode.parentNode.classList.add('hidden')
     })
   })
+
+  const popupRegister = document.querySelector(".popup-action-register");
+  const popupLogin = document.querySelector(".popup-action-login");
+  const btnRegister = document.querySelector(".btn-register")
+  const btnLogin = document.querySelector(".btn-login")
+  btnRegister.addEventListener("click", function () {
+    popupRegister.classList.remove("hidden");
+    popupLogin.classList.add("hidden");
+  });
+  btnLogin.addEventListener("click", function () {
+    popupLogin.classList.remove("hidden");
+    popupRegister.classList.add("hidden");
+  });
+
+  // 
+  const btnShowPopup = Array.from(document.querySelectorAll('.show-popup'));
+  btnShowPopup.map(item => {
+    item.addEventListener('click', function() {
+      popupLogin.classList.remove('hidden')
+    });
+  })
 })
