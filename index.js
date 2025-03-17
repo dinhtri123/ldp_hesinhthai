@@ -18,27 +18,39 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  const btnClosePopup = Array.from(document.querySelectorAll('.popup .btn-close-popup'));
+  const btnClosePopup = Array.from(document.querySelectorAll('.close-popup'));
   btnClosePopup.map(item => {
     item.addEventListener('click', function() {
       item.parentNode.parentNode.classList.add('hidden')
     })
   })
+  const closePopup = Array.from(document.querySelectorAll('.close-popup-action'));
+  closePopup.map(item => {
+    item.addEventListener('click', function() {
+      item.parentNode.parentNode.parentNode.classList.add('hidden')
+    })
+  })
+
+  
 
   const popupRegister = document.querySelector(".popup-action-register");
   const popupLogin = document.querySelector(".popup-action-login");
   const btnRegister = document.querySelector(".btn-register")
   const btnLogin = document.querySelector(".btn-login")
-  btnRegister.addEventListener("click", function () {
-    popupRegister.classList.remove("hidden");
-    popupLogin.classList.add("hidden");
-  });
-  btnLogin.addEventListener("click", function () {
-    popupLogin.classList.remove("hidden");
-    popupRegister.classList.add("hidden");
-  });
+  if(btnRegister) {
+    btnRegister.addEventListener("click", function () {
+      popupRegister.classList.remove("hidden");
+      popupLogin.classList.add("hidden");
+    });
+  }
+  if(btnLogin) {
+    btnLogin.addEventListener("click", function () {
+      popupLogin.classList.remove("hidden");
+      popupRegister.classList.add("hidden");
+    });
+  }
 
-  // 
+  
   const btnShowPopup = Array.from(document.querySelectorAll('.show-popup'));
   btnShowPopup.map(item => {
     item.addEventListener('click', function() {
