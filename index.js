@@ -56,5 +56,19 @@ document.addEventListener('DOMContentLoaded', function() {
     item.addEventListener('click', function() {
       popupLogin.classList.remove('hidden')
     });
-  })
+  });
+
+  const popupRules =document.querySelector(".popup-rules");
+  if(popupRules) {
+    const accTitle = Array.from(document.querySelectorAll(".acc-title"));
+    accTitle.map(item => {
+      item.addEventListener('click', function() {
+        if(item.parentNode.classList.contains('active')) {
+          item.parentNode.classList.remove('active')
+        }else {
+          item.parentNode.classList.add('active')
+        }
+      })
+    })
+  }
 })
